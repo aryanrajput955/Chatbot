@@ -36,7 +36,7 @@ export default function Home() {
           'Content-Type':'application/json'
         }
       }
-      const response=await fetch('http://localhost:8000/gemini',options)
+      const response=await fetch('https://chat-backend-do03.onrender.com/gemini',options)
       const data=await response.text()
 
       setchatHistory([...chatHistory,{
